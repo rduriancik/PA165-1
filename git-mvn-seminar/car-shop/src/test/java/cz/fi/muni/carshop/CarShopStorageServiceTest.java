@@ -1,23 +1,20 @@
 package cz.fi.muni.carshop;
 
-import static org.hamcrest.Matchers.hasKey;
-import static org.hamcrest.Matchers.hasSize;
-import static org.junit.Assert.assertThat;
-import static org.junit.Assert.assertTrue;
-
-import java.awt.Color;
-import java.util.List;
-import java.util.Map;
-
-import org.junit.Test;
-
-import org.junit.rules.ExpectedException;
-import org.junit.Rule;
-
 import cz.fi.muni.carshop.entities.Car;
 import cz.fi.muni.carshop.enums.CarTypes;
 import cz.fi.muni.carshop.services.CarShopStorageService;
 import cz.fi.muni.carshop.services.CarShopStorageServiceImpl;
+import org.junit.Rule;
+import org.junit.Test;
+import org.junit.rules.ExpectedException;
+
+import java.awt.*;
+import java.util.List;
+import java.util.Map;
+
+import static org.hamcrest.Matchers.*;
+import static org.junit.Assert.assertThat;
+import static org.junit.Assert.assertTrue;
 
 public class CarShopStorageServiceTest {
 
