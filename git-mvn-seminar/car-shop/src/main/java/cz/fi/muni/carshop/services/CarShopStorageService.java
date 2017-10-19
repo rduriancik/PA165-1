@@ -1,11 +1,12 @@
 package cz.fi.muni.carshop.services;
 
-import java.awt.Color;
-import java.util.List;
-import java.util.Optional;
-
 import cz.fi.muni.carshop.entities.Car;
 import cz.fi.muni.carshop.enums.CarTypes;
+import cz.fi.muni.carshop.exceptions.RequestedCarNotFoundException;
+
+import java.awt.*;
+import java.util.List;
+import java.util.Optional;
 
 public interface CarShopStorageService {
 
@@ -48,6 +49,6 @@ public interface CarShopStorageService {
 	 * @throw RequestedCarNotFoundException in case car doesn't exist in the
 	 *        storage
 	 */
-	// void sellCar(Car car) throws RequestedCarNotFoundException;
+    void sellCar(Car car) throws RequestedCarNotFoundException;
 
 }
